@@ -15,7 +15,7 @@ export class ListItens extends Component{
     UNSAFE_componentWillMount(){
         //Requisicao HTTP
         //https://viacep.com.br/ws/03808130/json/
-        axios.get('https://viacep.com.br/ws/01001000/json/')
+        axios.get('http://sandbox.cisti.com.br/Cliente/BuscaCliente/27635627953')
         .then(response => {
             this.setState({ listaCliente: response.data });
         })
@@ -28,11 +28,12 @@ export class ListItens extends Component{
  render(){
      
      const lista = this.state.listaCliente ;
+     console.log(lista)
 
     return (
         <ContainerScroll>
             <Itens
-               key={lista.cep}
+               key={lista.Cliente}
                lista={lista}
             />  
         </ContainerScroll>

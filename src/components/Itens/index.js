@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {Container, ItensContatiner , ItemTab , Title , ItemText , TitleItem} from './styles.js';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export class Itens extends Component {
 
@@ -11,22 +10,22 @@ export class Itens extends Component {
         <Container>
                 <ItemTab>
                         <Title>Enderecos Clientes</Title>
-                        <TitleItem>CEP</TitleItem>
-                        <ItemText> {this.props.lista.cep} </ItemText>
-                        <TitleItem>LOGRADOURO</TitleItem>
-                        <ItemText> {this.props.lista.logradouro} </ItemText>
-                        <TitleItem>COMPLEMENTO</TitleItem>
-                        <ItemText> {this.props.lista.complemento} </ItemText>
-                        <TitleItem>BAIRRO</TitleItem>
-                        <ItemText> {this.props.lista.bairro} </ItemText>
-                        <TitleItem>LOCALIDADE</TitleItem>
-                        <ItemText> {this.props.lista.localidade} </ItemText>
-                        <TitleItem>UF</TitleItem>
-                        <ItemText> {this.props.lista.uf} </ItemText>
-                        <TitleItem>IBGE</TitleItem>
-                        <ItemText> {this.props.lista.ibge} </ItemText>
-                        <TitleItem>GIA</TitleItem>
-                        <ItemText> {this.props.lista.gia} </ItemText>
+                        <TitleItem>cliente</TitleItem>
+                        <ItemText> {this.props.lista.cliente} </ItemText>
+                        <TitleItem>cnpjCpf</TitleItem>
+                        <ItemText> {this.props.lista.cnpjCpf} </ItemText>
+                        <TitleItem>endCliente</TitleItem>
+                        <ItemText> {this.props.lista.endCliente} </ItemText>
+                        <TitleItem>endEntrega</TitleItem>
+                        <ItemText> {this.props.lista.endEntrega} </ItemText>
+                        <TitleItem>endNumero</TitleItem>
+                        <ItemText> {this.props.lista.endNumero} </ItemText>
+                        <TitleItem>telNumero</TitleItem>
+                        <ItemText> {this.props.lista.telNumero} </ItemText>
+                        <TitleItem>siglaPessoa</TitleItem>
+                        <ItemText> {this.props.lista.siglaPessoa} </ItemText>
+                        <TitleItem>endCep</TitleItem>
+                        <ItemText> {this.props.lista.endCep} </ItemText>
                 </ItemTab>
         </Container >
         );
